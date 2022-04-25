@@ -1,12 +1,22 @@
 <template>
   <div>
-    App
+    <span>{{ msg }}</span>
+    <button @click='addMsg'>+= !</button>
   </div>
 </template>
 
 <script>
 export default {
-  
+  data() {
+    return {
+      msg: 'Hello World'
+    }
+  },
+  methods: {
+    addMsg() {
+      this.msg += "!"
+    }
+  }
 }
 </script>
 
