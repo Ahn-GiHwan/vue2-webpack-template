@@ -1,25 +1,13 @@
 <template>
-  <div>
-    <span>{{ msg }}</span>
-    <button @click='addMsg'>+= !</button>
-  </div>
+  <TheTest/>
 </template>
 
 <script>
+import TheTest from './components/TheTest.vue'
+
 export default {
-  data() {
-    return {
-      msg: 'Hello World'
-    }
-  },
-  methods: {
-    addMsg() {
-      this.msg += "!"
-    }
-  }
+  components: {
+    TheTest
+  }  
 }
 </script>
-
-<style scoped>
-  
-</style>
